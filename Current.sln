@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 Application Layer", "1 Application Layer", "{41EBB984-EC01-4B9E-BDD5-794BC60164FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 Service Layer", "2 Service Layer", "{D7309579-C63D-48E9-88EF-4FBF0356910B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 Business Layer", "3 Business Layer", "{60A70564-F926-4854-86E0-A4710DAC8DDE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 Data Layer", "4 Data Layer", "{B3E0D04D-D924-4929-8DFD-4634BCBF6A86}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Desktop", "Desktop", "{3E2E1923-5AB5-4780-BCCA-6F8A01BC511F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTestApp", "ConsoleTestApp\ConsoleTestApp.csproj", "{4F7C4C7D-D136-46B6-8180-ADBD677A7624}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AG.Common", "AG.Common\AG.Common.csproj", "{A257A073-8141-4884-B17C-00F5355AE9A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{CE96C52B-0555-4943-8C59-950E02389D8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AG.Common.Tests", "AG.Common.Tests\AG.Common.Tests.csproj", "{62415DDF-E9E3-4790-B633-3C5580329D4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AG.Domain", "AG.Domain\AG.Domain.csproj", "{24DE3184-8C37-47E8-8D08-626A2F4F2D9B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{085A31B6-51B1-46F0-A880-04B78D1ABC9D}"
+	ProjectSection(SolutionItems) = preProject
+		tweet.txt = tweet.txt
+		user.txt = user.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F7C4C7D-D136-46B6-8180-ADBD677A7624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F7C4C7D-D136-46B6-8180-ADBD677A7624}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F7C4C7D-D136-46B6-8180-ADBD677A7624}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F7C4C7D-D136-46B6-8180-ADBD677A7624}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A257A073-8141-4884-B17C-00F5355AE9A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A257A073-8141-4884-B17C-00F5355AE9A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A257A073-8141-4884-B17C-00F5355AE9A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A257A073-8141-4884-B17C-00F5355AE9A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62415DDF-E9E3-4790-B633-3C5580329D4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62415DDF-E9E3-4790-B633-3C5580329D4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62415DDF-E9E3-4790-B633-3C5580329D4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62415DDF-E9E3-4790-B633-3C5580329D4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24DE3184-8C37-47E8-8D08-626A2F4F2D9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24DE3184-8C37-47E8-8D08-626A2F4F2D9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24DE3184-8C37-47E8-8D08-626A2F4F2D9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24DE3184-8C37-47E8-8D08-626A2F4F2D9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3E2E1923-5AB5-4780-BCCA-6F8A01BC511F} = {41EBB984-EC01-4B9E-BDD5-794BC60164FB}
+		{4F7C4C7D-D136-46B6-8180-ADBD677A7624} = {3E2E1923-5AB5-4780-BCCA-6F8A01BC511F}
+		{62415DDF-E9E3-4790-B633-3C5580329D4E} = {CE96C52B-0555-4943-8C59-950E02389D8A}
+		{24DE3184-8C37-47E8-8D08-626A2F4F2D9B} = {60A70564-F926-4854-86E0-A4710DAC8DDE}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://mphadevwork.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = AG.Common.Tests\\AG.Common.Tests.csproj
+		SccProjectTopLevelParentUniqueName1 = Current.sln
+		SccProjectName1 = AG.Common.Tests
+		SccLocalPath1 = AG.Common.Tests
+		SccProjectUniqueName2 = AG.Common\\AG.Common.csproj
+		SccProjectName2 = AG.Common
+		SccLocalPath2 = AG.Common
+		SccProjectUniqueName3 = AG.Domain\\AG.Domain.csproj
+		SccProjectTopLevelParentUniqueName3 = Current.sln
+		SccProjectName3 = AG.Domain
+		SccLocalPath3 = AG.Domain
+		SccProjectUniqueName4 = ConsoleTestApp\\ConsoleTestApp.csproj
+		SccProjectTopLevelParentUniqueName4 = Current.sln
+		SccProjectName4 = ConsoleTestApp
+		SccLocalPath4 = ConsoleTestApp
+	EndGlobalSection
+EndGlobal

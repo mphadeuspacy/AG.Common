@@ -1,0 +1,5 @@
+1. TwitterHandler case-insensitive, so say, "Alan" & "alan" would be assumed same user.
+2. Assumes users have valid names.
+3. User & text files are stored on the root of the project.
+4. All Unit tests are passing.
+5. Project was created in VS 2015 Enterprise.
