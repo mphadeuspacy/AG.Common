@@ -1,0 +1,65 @@
+﻿@model AG.Data.Models.User
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>User</h4>
+    <hr />
+    <table class="table">
+        <tr>
+            <th>
+                <DisplayName>Username</DisplayName>
+            </th>
+
+            <th>
+                <DisplayName>Tweets</DisplayName>
+            </th>
+
+            <th>
+                <DisplayName>Followers</DisplayName>
+            </th>
+
+            <th>
+                <DisplayName>Following</DisplayName>
+            </th>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.userName)
+            </td>
+
+            <td>
+                @foreach (var tweet in Model.tweets)
+            {
+                    <p>@Html.Raw('@')@Html.DisplayFor(model => model.userName) @Html.Raw(" : ") @Html.DisplayFor(model => tweet.message)</p>
+                }
+            </td>
+
+            <td>
+                <ul>
+                    @foreach (var userFollower in Model.userFollowers)
+                    {
+                        <li>@Html.DisplayFor(model => userFollower.follower.userName)</li>
+                    }
+                </ul>
+            </td>
+
+            <td>
+                <ul>
+                    @foreach (var userFollowee in Model.userFollowees)
+                    {
+                        <li>@Html.DisplayFor(model => userFollowee.followee.userName)</li>
+                    }
+                </ul>
+            </td>
+        </tr>
+    </table>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>

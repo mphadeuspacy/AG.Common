@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Feed";
+}
+
+<div class="jumbotron">
+    <h1>Tweets</h1>
+</div>
+
+<div class="col-md-4"></div>
+<div class="col-md-4">
+    @foreach (var item in Model)
+    {
+        <p>@item</p>
+    }
+</div>

@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Select Files</h1>
+</div>
+
+<div class="col-md-4"></div>
+<div class="col-md-4">
+    <form action="Home/Feed" method="post">
+        <div class="form-group">
+            <label>Select user file:</label>
+            <input type="file" class="form-control" name="UserFilePath" required>
+        </div>
+
+        <div class="form-group">
+            <label>Select tweet file:</label>
+            <input type="file" class="form-control" name="TweetFilePath" required>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary" value="Simulate Feed" />
+        </div>
+    </form>
+</div>

@@ -1,0 +1,25 @@
+﻿@model IEnumerable<AG.Data.Models.User>
+
+
+@{
+    ViewBag.Title = "TweetFeed";
+}
+
+
+    <h3>Tweet Feed</h3>
+    <hr />
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+    @foreach (var user in Model)
+    {
+        <h4>
+            @Html.DisplayFor(model => user.userName)
+        </h4>
+
+        foreach (var tweet in user.tweets)
+        {
+            <p>@Html.Raw('@')@Html.DisplayFor(model => user.userName) @Html.Raw(" : ") @Html.DisplayFor(model => tweet.message)</p>
+        }
+        <br />
+    }
+</div>

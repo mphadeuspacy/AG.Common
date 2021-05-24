@@ -1,0 +1,34 @@
+﻿@model AG.Data.Models.Following
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Following</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.followee.userName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.followee.userName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.follower.userName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.follower.userName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.follwingId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

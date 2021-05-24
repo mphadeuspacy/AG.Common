@@ -1,0 +1,39 @@
+﻿@model IEnumerable<AG.Data.Models.Tweet>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            <DisplayName>Username</DisplayName>
+        </th>
+        <th>
+            <DisplayName>Message</DisplayName>
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.user.userName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.message)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.tweetId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.tweetId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.tweetId })
+        </td>
+    </tr>
+}
+
+</table>
